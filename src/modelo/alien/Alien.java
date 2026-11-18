@@ -17,9 +17,9 @@ public class Alien {
 		}else {
 			this.tamanio=10;
 		}
-		precioCuerpo=(tamanio/100)*20;
-		precioExtremidad=(tamanio/100)*10;
-		precioOjo=(tamanio/100)*5;
+		this.precioCuerpo=(this.tamanio/100.0)*20;
+		this.precioExtremidad=(this.tamanio/100.0)*10;
+		this.precioOjo=(this.tamanio/100.0)*5;
 	}
 	//GETTERS
 	public int getTamanio() {
