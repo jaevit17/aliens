@@ -1,0 +1,16 @@
+Toma el rol de un programador experto en Java y JUnit 5.
+
+Te proporcionaré el contexto del proyecto y la clase Alien.
+CONTEXTO:
+-El proyecto Fábrica de Aliens Personalizados consiste en 
+desarrollar una aplicación Java que permite crear aliens 
+de juguete con características físicas personalizadas.
+-Cada Alien tiene un tamaño entre 5 y 30 cm y un color. 
+Si el tamaño está fuera de ese rango, se establece automáticamente en 10 cm.
+
+El sistema calcula automáticamente tres precios:
+- Cuerpo: 20% del tamaño.
+- Extremidades: 10% del tamaño.
+- Ojos: 5% del tamaño.
+La clase aplica encapsulamiento mediante atributos privados, 
+constructor y getters, sin setters.
