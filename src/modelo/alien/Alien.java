@@ -20,6 +20,7 @@ public class Alien {
 		this.precioCuerpo=(this.tamanio/100.0)*20;
 		this.precioExtremidad=(this.tamanio/100.0)*10;
 		this.precioOjo=(this.tamanio/100.0)*5;
+		this.color=color;
 	}
 	//GETTERS
 	public int getTamanio() {
@@ -61,9 +62,10 @@ public class Alien {
 		System.out.println("Numero Ojos: "+numeroOjos);
 		System.out.println("Numero de Brazos: "+numeroBrazos);
 		System.out.println("Numero de Pies: "+numeroPies);
+		System.out.println("Precio de Cuerpo: "+precioCuerpo);
 		System.out.println("Precio de Extremidad: "+precioExtremidad);
 		System.out.println("Precio de Ojos: "+precioOjo);
-		System.out.println("Precio de Cuerpo: "+precioCuerpo);
+		
 		
 	}
 }
