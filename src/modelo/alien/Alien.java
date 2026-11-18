@@ -21,4 +21,49 @@ public class Alien {
 		precioExtremidad=(tamanio/100)*10;
 		precioOjo=(tamanio/100)*5;
 	}
+	//GETTERS
+	public int getTamanio() {
+		return tamanio;
+	}
+	//-----------------------------
+	public String getColor() {
+		return color;
+	}
+	//-----------------------------
+	public int getNumeroOjos() {
+		return numeroOjos;
+	}
+	//-----------------------------
+	public int getNumeroBrazos() {
+		return numeroBrazos;
+	}
+	//-----------------------------
+	public int getNumeroPies() {
+		return numeroPies;
+	}
+	//-----------------------------
+	public double getPrecioExtremidad() {
+		return precioExtremidad;
+	}
+	//-----------------------------
+	public double getPrecioOjo() {
+		return precioOjo;
+	}
+	//-----------------------------
+	public double getPrecioCuerpo() {
+		return precioCuerpo;
+	}
+	//METODOS
+	public void imprimir() {
+		System.out.println("-----ALIEN-----");
+		System.out.println("Tamaño: "+tamanio);
+		System.out.println("Color: "+color);
+		System.out.println("Numero Ojos: "+numeroOjos);
+		System.out.println("Numero de Brazos: "+numeroBrazos);
+		System.out.println("Numero de Pies: "+numeroPies);
+		System.out.println("Precio de Extremidad: "+precioExtremidad);
+		System.out.println("Precio de Ojos: "+precioOjo);
+		System.out.println("Precio de Cuerpo: "+precioCuerpo);
+		
+	}
 }
