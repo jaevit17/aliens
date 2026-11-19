@@ -65,7 +65,24 @@ public class Alien {
 		System.out.println("Precio de Cuerpo: "+precioCuerpo);
 		System.out.println("Precio de Extremidad: "+precioExtremidad);
 		System.out.println("Precio de Ojos: "+precioOjo);
+	}
 		
+	public boolean agregarBrazos(int cantidadBrazos) {
+		if(cantidadBrazos>0 &&(this.numeroBrazos + this.numeroPies+cantidadBrazos)<11) {
+			this.numeroBrazos+=cantidadBrazos;
+			return true;
+		}else {
+			return false;
+		}
 		
 	}
+	public boolean agregarPiernas(int cantidadPiernas) {
+		if(cantidadPiernas>0 &&(this.numeroBrazos + this.numeroPies+cantidadPiernas)<11) {
+			this.numeroPies+=cantidadPiernas;
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
 }

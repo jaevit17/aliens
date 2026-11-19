@@ -1,5 +1,6 @@
 package modelo.alien;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -28,5 +29,60 @@ public class TestAlienJUnit {
 	assertEquals(0.5,a4.getPrecioExtremidad(),0.0001);
 	assertEquals(0.25,a4.getPrecioOjo(),0.0001);
 	}
+	//TEST AGREGAR BRAZOS
+	@Test
+	public void agregarBrazosTrue() {
+		Alien a5=new Alien(5,"Azul");
+		boolean resultado=a5.agregarBrazos(3);
+		assertEquals(3,a5.getNumeroBrazos());
+		assertTrue(resultado);
+	}
+	//TEST AGREGAR BRAZOS SUPERANDO LIMITE
+	@Test
+	public void agregarBrazosFalse() {
+		Alien a6=new Alien(5,"Azul");
+		boolean resultado=a6.agregarBrazos(9);
+		resultado=a6.agregarBrazos(2);
+		assertEquals(11,a6.getNumeroBrazos());
+		assertTrue(resultado);
+	}
+	//TEST AGREGAR PIERNAS
+	@Test
+	public void agregarPiernasTrue() {
+		Alien a7=new Alien(5,"Azul");
+		boolean resultado=a7.agregarPiernas(5);
+		assertEquals(5,a7.getNumeroPies());
+		assertTrue(resultado);
+	}
+	//TEST AGREGAR BRAZOS SUPERANDO LIMITE
+	@Test
+	public void agregarPiernasFalse() {
+		Alien a8=new Alien(5,"Azul");
+		boolean resultado=a8.agregarPiernas(9);
+		resultado=a8.agregarPiernas(2);
+		assertEquals(11,a8.getNumeroPies());
+		assertTrue(resultado);
+	}
+	//TEST AGREGAR BRAZOS Y PIERNAS
+	@Test
+	public void agregarBrazosPiernas() {
+		Alien a9=new Alien(6,"celeste");
+		boolean resultado=a9.agregarPiernas(5);
+		resultado=a9.agregarBrazos(5);
+		assertEquals(5,a9.getNumeroPies());
+		assertEquals(5,a9.getNumeroBrazos());
+		assertTrue(resultado);
+	}
+	//TEST AGREGAR BRAZOS Y PIERNAS SUPERANDO LIMITE
+	@Test
+	public void agregarBrazosPiernasFalse() {
+		Alien a9=new Alien(6,"celeste");
+		boolean resultado=a9.agregarPiernas(5);
+		resultado=a9.agregarBrazos(6);
+		assertEquals(5,a9.getNumeroPies());
+		assertEquals(6,a9.getNumeroBrazos());
+		assertTrue(resultado);
+	}
+		
 		
 }
